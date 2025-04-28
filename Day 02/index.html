@@ -3,28 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Youtube</title>
+  <title>Arcadao</title>
   <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
     
+      background-image: url(./img1.png);
+    }
+    .wrapper{
+      width: 100%;
+      height: 100vh;
+      
+    }
+    header{
+      display: flex;
+      justify-content: space-around;
+      /* border:2px solid red; */
+      width: 100vw;
+      height: 60px;
+      align-items: center;
+      color: #fff;
+    }
+    .header-nav{
+      /* border: 1px solid green; */
+      width: 40%;
+      display: inline-block;
+      display: flex;
+
+      justify-content: space-between;
+      padding: 5px;
+    }
+    header button{
+      padding: 8px;
+      color: #fff;
+      border-radius: 8px;
+      border: 1px solid #fff;
+      background: inherit;
+    }
+    .btn{
+      margin-left: 30px;
+      background-color: green;
+      border: 1px solid maroon;
+     
+    }
+    .btn span{
+      color: green;
+    }
+    section{
+      margin-top: 50px;
+      margin-left: 150px;
+
+    }
+    .section-header{
+      font-size: 50px;
+      color: #fff;
+      width: 350px;
+      font-weight: 700;
+      /* border: 1px solid yellow; */
+      margin-bottom: 70px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .section-body{
+          font-size: 25px;
+          font-weight: 700;
+          color: #fff;
+          width: 500px;
+          margin-bottom: 30px;
+    }
+    section button{
+      background-color: green;
+      color: #fff;
+      padding: 10px;
+      width: 150px;
+      border: none;
+      border-radius: 30px;
+    }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <div>
-        Arcadao
-      </div>
-      <div class="header-nav">
-        <div>What is ARCA ? </div>
-        <div>Articles</div>
-        <div>Projects</div>
-        <div>Contact</div>
-      </div>
-      <div>
-        <button>Online</button>
-        <button>Join Us</button>
-      </div>
-    </header>
+  <div class="container">
+    <div class="wrapper">  
+      <header>
+          <div>
+              Arcadao
+          </div>
+        <div class="header-nav">
+          <span>What is ARCA ?</span>
+          <span>Articles</span>
+          <span>Projects</span>
+          <span>Contact</span>
+        </div>
+        <div>
+          <button > <span>.</span>Online</button>
+          <button class="btn">Join Us</button>
+        </div>
+      </header>
+  
+      <section><!-- Section Start from here -->
+  
+        <div class="section-header">
+          An Arweave <br/> community found A
+        </div>
+  
+        <div class="section-body">Arca is a dececentralised  Automonous Organisation created  to promote dececentralization of the Arweave  Blockchain ecosystem.
+        </div>
+  
+        <div>
+          <button>Join Us </button>
+        </div>
+  
+      </section>
+    </div>
   </div>
 </body>
 </html>
