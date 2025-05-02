@@ -72,6 +72,11 @@ section{
   justify-content: space-between;
   margin: 50px 300px;
   width: 400px;
+ 
+}
+.task-container{
+  overflow-y: auto;
+  border: 1px solid red;
   
 }
 section button{
@@ -107,9 +112,9 @@ section button{
 
 /* Mobile View (width: less than 480px ) */
 @media (max-width: 480px) {
-  *{
+  /* *{
     background-color: red;
-  }
+  } */
   main{
     margin-top: 70px;
     margin-left: 15px;
@@ -139,6 +144,9 @@ section button{
     width: 500px;
     margin: 50px 60px;
   }
+  .section-text{
+    margin-top: 5px;
+  }
 
   
 }
@@ -156,9 +164,9 @@ section button{
 
 /* Tablet View (width: less than 768px  and bigger than 480px) */
 @media (max-width: 820px) {
-  *{
+  /* *{
     background-color: aqua;
-  }
+  } */
   main {
     margin: 20px;
     text-align: center;
@@ -188,6 +196,7 @@ section button{
 
   .section-text {
     font-size: 20px;
+    margin-top: 5px;
   }
 }
 
