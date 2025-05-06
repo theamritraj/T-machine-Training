@@ -7,6 +7,8 @@
   }
 
   .wrapper{
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     border: 1px solid red;
   }
@@ -20,14 +22,15 @@
     border: 1px solid blue;
   }
   main{
-    border: 1px solid blue;
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
+  align-self: center;
   justify-content: center; 
   align-items: center;    
   width: fit-content; 
   padding: 1rem;            
-  margin: 3rem auto;           
+  /* margin: 3rem auto;            */
     
   
   }
@@ -136,6 +139,8 @@
 
   section button{
   margin-top: .5rem;
+  display: flex;
+  align-items: center;
   }
  
 
