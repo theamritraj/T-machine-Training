@@ -12,30 +12,30 @@ body,html{
 
 /* Using Grid */
 
-.container{
+/* .container{
   display: grid;
   grid-template-columns: 2.5fr 9fr;
   /* border: 1px solid red;
   padding: 0.5rem; */
 
-}
+} 
  
-
+/*
   
 .sideBar{
   height: 100vh;
   background: #171717;
   /* border: 1px solid yellow;
-  padding: 0.2rem; */
+  padding: 0.2rem;
   
 }
 .main-section{
   height: 100vh;
   background: #212121;
   /* border: 1px solid rgb(20, 182, 41);
-  padding: 0.5rem; */
+  padding: 0.5rem; 
 }
-
+*/
 .history-section{
   color: #fff;
   padding: 1.5rem;
@@ -94,7 +94,7 @@ body,html{
 
 /* Using - flex  */
 
-/* .container{
+.container{
   display: flex;
   flex-direction: row;
 
@@ -109,7 +109,7 @@ body,html{
   height: 100vh;
   background: #212121;
   width: 78%;
-} */
+} 
 
 
 
@@ -137,40 +137,57 @@ body,html{
 }
 
 .main-section-search {
-  margin: 12rem 0rem;
+  /* margin: 12rem 0rem; */
   display: flex;
   flex-direction: column; 
-  justify-content: center;
   align-items: center;   
   color: #fff;
-  text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 
+
+
+.chatgpt-text{
+  cursor: pointer;
+  width: 10rem;
+  
+ 
+}
+
+.chatgpt-text:hover{
+     border-radius: 0.5rem;
+     background: #171717;
+
+}
+.fa-angle-down{
+  
+}
 
 
 .chat-input-bar {
   background-color: #2c2c2c;
- 
-  padding: 10px;
-  border-radius: 30px;
-  
+  border-radius: 20px;
+  padding: 1rem;
+  width: 45rem;
+  margin-top: 2rem;
+  /* height: 9rem; */
 }
 
 .chat-input-bar input {
   flex: 1;
-  background: transparent;
+  background: inherit;
   border: none;
   color: #fff;
   font-size: 16px;
   outline: none;
 }
 
-.icons,
-.voice-buttons {
+.icons{
   display: flex;
-  gap: 8px;
+  justify-content: space-between;
+  margin-top: 3rem;
+  border: 1px solid red;
 }
 
 .icons button,
@@ -179,13 +196,15 @@ body,html{
   border: none;
   color: #fff;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  font-size: 16px;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  
 }
 
 .voice-buttons .wave {
   background-color: white;
   color: black;
+  margin-top: 2rem;
 }
